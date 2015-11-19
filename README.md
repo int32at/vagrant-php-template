@@ -8,7 +8,7 @@ A basic vagrant template for PHP development (apache2)
 That's it.
 
 ### Development
-Put all your web apps source code into the root directory (relative to `Vagrantfile`) and they will be served at `http://localhost`.
+Put all your web apps source code into the root directory (relative to `Vagrantfile`) and they will be served at `http://localhost:8080`.
 
 ### Configuration
 - basic ubuntu/trusty64 server with 256mb memory
