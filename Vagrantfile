@@ -7,6 +7,11 @@ sudo apt-get install -y apache2 libapache2-mod-php5 php5
 sudo rm -rf /var/www/html
 sudo ln -s /vagrant /var/www/html
 echo "ServerName localhost" >> /etc/apache2/apache2.conf
+echo "<Directory /var/www/>
+	Options Indexes FollowSymLinks
+	AllowOverride All
+	Require all granted
+</Directory>" >> /etc/apache2/apache2.conf
 sudo a2enmod rewrite
 sudo a2enmod headers
 sudo service apache2 restart
