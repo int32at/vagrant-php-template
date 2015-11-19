@@ -11,6 +11,8 @@ That's it.
 Put all your web apps source code into the root directory (relative to `Vagrantfile`) and they will be served at `http://localhost:8080`.
 
 ### Configuration
+To change the name of the vm/vagrant instance you can edit the `$name` variable in the [Vagrantfile](Vagrantfile).
+
 - basic ubuntu/trusty64 server with 256mb memory
 - apache2 server with `rewrite` and `headers` mod
 - web app served at port `8080`
