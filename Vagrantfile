@@ -5,7 +5,7 @@ echo starting installation
 apt-get update -y
 sudo apt-get install -y apache2 libapache2-mod-php5 php5
 sudo rm -rf /var/www/html
-sudo ln -s /vagrant /var/www/html
+sudo ln -s /vagrant/src /var/www/html
 echo "ServerName localhost" >> /etc/apache2/apache2.conf
 echo "<Directory /var/www/>
 	Options Indexes FollowSymLinks
